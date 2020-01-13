@@ -1,0 +1,13 @@
+<table border = 1>
+  <tr>
+    <td>Decimal</td><td>Binary</td>
+  </tr>
+  <% @mas.each do |row| %>
+    <tr>
+      <% row.each do |col| %>
+        <td><%= col %></td>
+      <% end %>
+    </tr>
+  <% end %>
+</table>
+<%= link_to 'Again', lr8_logic_input_path %>

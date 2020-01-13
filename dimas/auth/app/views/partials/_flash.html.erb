@@ -1,0 +1,17 @@
+<% flash.each do |message_type, message| %>
+
+    <div class="row">
+
+      <div class="col">
+
+        <div class="alert alert-<%= message_type %> alert-dismissible fade show" role="alert">
+
+          <%= message.html_safe %>
+
+        </div>
+
+      </div>
+
+    </div>
+
+<% end %>
